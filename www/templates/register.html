@@ -1,0 +1,35 @@
+<ion-view view-title="Register">
+  <ion-content>
+    <ion-list data-ng-form name="myForm">
+      <label class="item item-input">
+        <span class="input-label">First Name</span>
+        <input type="text" id="first-name" ng-model="params.firstName" name="first-name" required>
+      </label>
+      <label class="item item-input">
+        <span class="input-label">Last Name</span>
+        <input type="text" id="last-name" ng-model="params.lastName" name="last-name" required>
+      </label>
+      <label class="item item-input">
+        <span class="input-label">Email</span>
+        <input type="email" id="email" ng-model="params.email" name="email" required>
+      </label>
+      <label class="item item-input">
+        <span class="input-label">Phone No</span>
+        <input type="tel" id="phone" ng-model="params.phone" name="phone" required>
+      </label>
+      <label class="item item-input">
+        <span class="input-label">Password</span>
+        <input type="password" id="password" ng-model="params.password" name="password" required>
+      </label>
+      <label class="item item-input">
+        <span class="input-label">Confirm Password</span>
+        <input type="password" id="password" ng-model="params.confirmPassword" name="password" required>
+      </label>
+      <ion-toggle  ng-model="params.rememberMe" toggle-class="toggle-calm">Remember Me</ion-toggle>
+      <div class="register-action">
+        <span>Already Registered? <a ng-click="signInUser()" >Sign In</a></span>
+        <button ng-click="registerUser()" class="button button-positive" ng-disabled="myForm.$invalid">Register</button>
+      </div>
+    </ion-list>
+  </ion-content>
+</ion-view>

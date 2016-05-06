@@ -1,0 +1,67 @@
+<ion-view view-title="Dashboard">
+  <ion-content class="padding">
+    <!-- <div class="row" ng-repeat="service in services" ng-if= "$index % 3 === 0"> -->
+    <div class="row">  
+      <div class="col col-33 col-item">
+        <div class="notifications" ng-hide="countZero" ng-model="newNotificationCount.pm">{{newNotificationCount.am}}</div>
+        <div class = "dashboard-item">
+          <img ng-src= "{{'img/'+services[0].img}}" height= "75px" width="75px" ng-click="openNotifications(services[0])">
+        </div>
+      </div>
+      <div class="col col-33 col-item">
+        <div class="notifications" ng-hide="countZero" ng-model="newNotificationCount.twitter">{{newNotificationCount.twitter}}</div>
+        <div class = "dashboard-item">
+          <img ng-src= "{{'img/'+services[1].img}}" height= "75px" width="75px" ng-click="openNotifications(services[1])">
+        </div>
+      </div>
+      <div class="col col-33 col-item">
+        <div class="notifications"></div>
+        <div class = "dashboard-item">
+          <img ng-src= "{{'img/'+services[2].img}}" height= "75px" width="75px">
+        </div>
+      </div>
+    </div>
+    <div class="row">  
+      <div class="col col-33 col-item">
+        <div class="notifications" ng-hide="countZero">{{newNotificationCount.sapient}}</div>
+        <div class = "dashboard-item">
+          <img ng-src= "{{'img/'+services[3].img}}" height= "75px" width="75px" ng-click="openNotifications(services[3])">
+        </div>
+      </div>
+      <div class="col col-33 col-item">
+        <div class="notifications"></div>
+        <div class = "dashboard-item">
+          <img ng-src= "{{'img/'+services[4].img}}" height= "75px" width="75px">
+        </div>
+      </div>
+      <div class="col col-33 col-item">
+        <div class="notifications" ng-hide="countZero">{{newNotificationCount.pm}}</div>
+        <div class = "dashboard-item">
+          <img ng-src= "{{'img/'+services[5].img}}" height= "75px" width="75px" ng-click="openNotifications(services[5])">
+        </div>
+      </div>
+    </div>
+    <!-- <div class="list card">
+      <div class="item item-divider">Health</div>
+      <div class="item item-body">
+        <div>
+          You ate an apple today!
+        </div>
+      </div>
+    </div>
+    <div class="list card">
+      <div class="item item-divider">Upcoming</div>
+      <div class="item item-body">
+        <div>
+          You have <b>29</b> meetings on your calendar tomorrow.
+        </div>
+      </div>
+    </div>
+	<button class="button button-block button-dark" ng-click="identifyUser()">
+	Identify me!
+	</button>
+	<button class="button button-block button-positive" ng-if="identified" ng-click="pushRegister()">
+	Register for Push
+	</button> -->
+  </ion-content>
+</ion-view>

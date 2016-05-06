@@ -1,0 +1,17 @@
+<ion-view view-title="Notifications" class="notification-view">
+  <ion-content>
+    <ion-list>
+      <ion-item class="item-remove-animate item-avatar item-icon-right"  ng-repeat="notification in notifications" type="item-text-wrap" ng-class = "applyClass(notification)">
+        <img ng-src="{{notification.image}}">
+        <h2>{{notification.title}}<span class="time-stamp">{{getTimeStamp(notification)}}</span></h2>
+        <p ng-click="openNotifications(notification)">{{notification.message}}<img ng-show= "showAlertIcon(notification)" class="alert-icon" ng-src="img/alert.png"></p>
+        <!-- <i class="icon ion-chevron-right icon-accessory"></i>
+
+        <ion-option-button class="button-assertive" ng-click="remove(notification)">
+          Delete
+        </ion-option-button> -->
+      </ion-item>
+    </ion-list>
+    <ion-item ng-show="noContent" class="no-content">No Content</ion-item>
+  </ion-content>
+</ion-view>

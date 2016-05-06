@@ -1,0 +1,78 @@
+.notifications {
+    display: inline-block;
+    /* width: 20px; */
+    /* height: 20px; */
+    position: relative;
+    top: 0.7em;
+    left: 4.5em;
+    z-index: 999999999;
+    background-color: rgb(220, 21, 21);
+    text-align: center;
+    border-radius: 12px;
+    /* font-weight: bold; */
+    color: white;
+    padding: 0px 6px;
+}
+.dashboard-item{
+	width: 75px;
+    height: 75px;
+    border-radius: 9px;
+    background-color: rgba(208, 205, 205, 0.4);
+}
+
+.register-action{
+    margin-top: 2em;
+    float: right;
+    margin-right: 1em;
+    span{
+        margin: 10px 4px;
+        display: inline-block;    
+    }
+    button {
+        padding: 0 25px;
+    }
+}
+
+.notification-view{
+    .no-content{
+        text-align: center;
+        border: none;
+    }
+    .unread-notification-notify{
+        .item-content{
+            h2{
+                font-weight: bold;
+            }
+            /*background-color: #FFFAC1;*/
+            font-weight: bold;
+        }
+    }
+
+    .unread-notification-alert{
+        .item-content{
+            h2{
+                font-weight: bold;
+            }
+            background-color: rgba(255, 173, 173, 0.54);
+            font-weight: bold;
+        }        
+    }
+
+    .item-content{
+        .time-stamp {
+            position: absolute;
+            right: 10%;
+            color: #8D8D90;
+            font-size: small;
+        }
+    }
+
+    .alert-icon{
+        height: 25px;
+        width: 25px;
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        right: 10%;
+    }
+}
